@@ -9,6 +9,12 @@ Disclaimer: This is a tool developed for educational and demonstration purposes 
 python3 -m pip install -r requirements.txt
 ```
 
+## Windows executable
+
+The `Build Windows executable` GitHub Actions workflow builds `kollus-download.exe` on pushes to `master` and can also be started manually from the Actions tab. Download the `kollus-download-windows` artifact from a completed workflow run.
+
+The executable bundles the Python application, not its runtime services. You still need a configured Docker environment with the required Linux containers and Kollus Player files, `ffmpeg` available on `PATH`, and `download_urls.txt` and `containers.txt` in the working directory when you run it.
+
 ## Install Kollus Player
 1. Get a copy of the [Kollus player](https://file.kollus.com/public/agent/KollusAgent-3.0.9.1.r1.exe)
 
